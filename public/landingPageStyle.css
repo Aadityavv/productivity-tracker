@@ -1,0 +1,79 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+a, h1,* {
+    color: white;
+    text-decoration: none;
+    z-index: 5;
+}
+
+body {
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    height: 100vh;
+    cursor: none;
+}
+
+#navButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 30%; 
+    margin-left: -2%;
+}
+
+* {
+    overflow: hidden;
+}
+#loginButtons{
+    font-size: 4vh;
+    width: 16%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 130%;
+    color: #c2ff73;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 5%;
+    flex-direction: column;
+}
+#hero>h1{
+    font-size: 245%;
+    margin: 0;
+}
+#hero>h2{
+    margin-top: 1%;
+    font-size: 200%;
+}
+.logo>h1{
+    color: #c2ff73
+}
+#hero>input{
+    margin-top: 1%;
+    width: 40%;
+    border-radius: 20px;
+    height: 30px;
+}
+.blurBGCircle {
+    background-color: #c2ff73;
+    position: fixed; /* Adjust based on your layout needs */
+    height: 30px; /* Adjust as needed */
+    width: 30px; /* Adjust as needed */
+    border-radius: 50%;
+    z-index: 1; /* Set a positive z-index */
+    filter: blur(10px); /* Adjust blur effect */
+    pointer-events: none; /* Prevent blocking mouse events */
+}
+
