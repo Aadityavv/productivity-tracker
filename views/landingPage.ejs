@@ -6,8 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./landingPageStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="blurBGCircle"></div>
@@ -17,7 +18,7 @@
         </div>
         <div id="navButtons">
                 <a href="">Home</a>
-                <a href="">Features</a>
+                <a href="">Interview</a>
                 <a href="">Pricing</a>
                 <a href="">About</a>
                 <a href="">Contact Us</a>
@@ -29,11 +30,15 @@
     </div>
 
     <div id="hero">
-        <h1>Analyze Your <span style="color: #c2ff73;;">Prepartion</span> with us</h1>
+        <h1>Analyze Your <span style="color: #c2ff73;;">Preparation</span> with us</h1>
         <h2>What do you <span class="logo">Aspire</span> to be?</h2>
-        <input type="text" placeholder="Type Here">
+        <form class="search-container" action="your-form-action-url" method="GET">
+            <input type="text" name="search" placeholder="Type Here">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
     </div>
     <script src="./animation.js"></script>
-
 </body>
 </html>

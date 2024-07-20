@@ -60,12 +60,41 @@ body {
 .logo>h1{
     color: #c2ff73
 }
-#hero>input{
+.search-container {
+    position: relative;
     margin-top: 1%;
     width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
     border-radius: 20px;
     height: 30px;
+    padding-right: 30px; /* Make space for the icon */
 }
+
+.search-container button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #c2ff73; /* Adjust icon color */
+    font-size: 16px;
+}
+
+.search-container button:focus {
+    outline: none;
+}
+
+.search-container .fa-search {
+    color: inherit; /* Inherit color from the button */
+}
+
 .blurBGCircle {
     background-color: #c2ff73;
     position: fixed; /* Adjust based on your layout needs */
@@ -76,4 +105,3 @@ body {
     filter: blur(10px); /* Adjust blur effect */
     pointer-events: none; /* Prevent blocking mouse events */
 }
-
